@@ -25,6 +25,7 @@ public class RMIServer {
             Registry registry = LocateRegistry.createRegistry(5050);
             registry.rebind("Chat_Server",server);
             System.out.println("Server started......");
+            System.out.println("Senura");
         
         }catch(RemoteException ex){
             Logger.getLogger(RMIServer.class.getName()).log(Level.SEVERE ,null , ex);
